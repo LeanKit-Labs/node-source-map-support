@@ -15,7 +15,7 @@ var fileContentsCache = {};
 var sourceMapCache = {};
 
 function isInBrowser() {
-  return typeof window !== 'undefined';
+  return typeof XMLHttpRequest !== 'undefined';
 }
 
 function retrieveFile(path) {
